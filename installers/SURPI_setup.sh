@@ -23,7 +23,7 @@
 export DEBIAN_FRONTEND=noninteractive
 
 #Change below folders as desired in order to change installation location.
-install_folder="/usr/local"
+install_folder="/AUB/ubunto"
 bin_folder="$install_folder/bin"
 
 if [ ! -d $bin_folder ]
@@ -158,6 +158,7 @@ tar xvfz cutadapt-1.2.1.tar.gz
 cd cutadapt-1.2.1
 python setup.py build
 sudo python setup.py install
+
 cd $CWD
 
 #
